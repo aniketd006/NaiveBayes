@@ -15,7 +15,7 @@ public class Category {
 	private double categoryProbabilty;
 	private HashMap<String, Double> wordProbability;
 	private HashMap<String, Double> authWordProb;
-	private HashMap<String, Double> contentWordProb;
+	//private HashMap<String, Double> contentWordProb;
 	
 	public Category(){
 		categoryName = "";
@@ -40,9 +40,9 @@ public class Category {
 		return authWordProb;
 	}
 	
-	public HashMap<String, Double> getContentWordProb(){
-		return authWordProb;
-	}
+//	public HashMap<String, Double> getContentWordProb(){
+//		return authWordProb;
+//	}
 	
 	public void setCategoryName(String name){
 		categoryName=name;
@@ -60,9 +60,9 @@ public class Category {
 		authWordProb = probabilityCalculation(wordList, allAuthWords, authWordProb);
 	}
 	
-	public void setContentWordProb(ArrayList<String> wordList, ArrayList<String> allContentWords){
-		authWordProb = probabilityCalculation(wordList, allContentWords, authWordProb);
-	}
+//	public void setContentWordProb(ArrayList<String> wordList, ArrayList<String> allContentWords){
+//		authWordProb = probabilityCalculation(wordList, allContentWords, authWordProb);
+//	}
 
     /**
      * Calculates P(feat(i)|C) - the probability of feat(i) occurring in that document class - 
